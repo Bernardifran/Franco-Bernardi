@@ -22,7 +22,7 @@
 
 
 .main_completo .main_img_fondo {
-    background-image: url("./../img/fondobarberia.jpg");
+    background-image: url("../img/fondobarberia.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
