@@ -1,0 +1,27 @@
+.main-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center center;
+    text-align: center;
+    font-size: 30px;
+    padding: 2rem;
+
+
+    .whatsapps {
+        color: green;
+
+    }
+
+
+    .facebooks {
+        color: #3b61c9;
+
+    }
+
+
+    .instagrams {
+        color: #ff00ff;
+    }
+
+
+}

@@ -1,0 +1,94 @@
+.grilla {
+    grid-gap: 2rem;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+
+        "grilla2     grilla1    grilla4"
+        "grilla2     grilla6    grilla4"
+        "grilla3     grilla6    grilla5"
+    ;
+
+    .grilla1 {
+        grid-area: grilla1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: roll-in-left .6s ease-out both;
+    }
+
+    .grilla2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grilla2;
+        animation: roll-in-left .6s ease-out both;
+
+        .Imagenn2 {
+            width: 100%;
+        }
+
+    }
+
+    .grilla3 {
+        grid-area: grilla3;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: roll-in-left .6s ease-out both;
+    }
+
+    .grilla4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grilla4;
+        animation: roll-in-left .6s ease-out both;
+
+        .Imagenn4 {
+            width: 100%;
+        }
+
+    }
+
+    .grilla5 {
+        grid-area: grilla5;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: roll-in-left .6s ease-out both;animation: roll-in-left .6s ease-out both;
+    }
+
+    .grilla6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grilla6;
+        animation: roll-in-left .6s ease-out both;
+
+        .Imagenn6 {
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+
+@keyframes roll-in-left {
+    0% {
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1
+    }
+}

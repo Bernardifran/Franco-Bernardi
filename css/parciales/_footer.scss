@@ -1,0 +1,87 @@
+.footer {
+    background-color: $colorNegro;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+    line-height: 70px;
+
+    .grupo-1 {
+        color: #ffffff;
+        background-image: url("../img/sillonfondonegro.jpg");
+        background-position: center;
+        background-size: cover;
+        padding: 50px;
+        align-items: center;
+        width: 50%;
+
+    }
+
+
+    .grupo-2 {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        padding: 50px;
+        align-items: center;
+        width: 50%;
+
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+
+
+            .facebook {
+                font-size: 1.5rem;
+                text-decoration: none;
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: #ffffff;
+                background-color: $colorRedes;
+                animation: rotate-center .6s ease-in-out both;
+
+                &:hover {
+                    color: #2632db;
+                    transition: all 0.5s ease;
+                }
+            }
+
+            .instagram {
+                font-size: 1.5rem;
+                text-decoration: none;
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: #ffffff;
+                background-color: $colorRedes;
+                animation: rotate-center .6s ease-in-out both;
+
+                &:hover {
+                    color: #ff04ab;
+                    transition: all 0.5s ease;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
